@@ -1,0 +1,66 @@
+📦 2. Demand Forecasting for a Multi-Store Retail Chain (Time Series + ML)
+
+📂 Project Requirements
+
+✅ Dataset:
+-Source: Rossmann Store Sales Dataset, Walmart, or BigMart Sales Dataset
+
+-Fields:
+
+ --Date, Store ID
+
+ --Sales
+
+ --Customers
+
+ --Promotion, School Holidays
+
+ --Store Type, Assortment, Open Days
+
+🛠 Tools & Tech:
+-Python
+
+-Libraries:
+
+ --pandas, numpy, matplotlib, seaborn
+
+ --xgboost, lightgbm, prophet
+
+ --scikit-learn, statsmodels
+
+📋 Tasks:
+Step 1: Data Cleaning
+-Handle missing values and closed stores
+
+-Convert dates into features (weekday, month, promo period)
+
+-Merge store metadata (type, competition distance)
+
+Step 2: EDA
+-Sales trends per store, weekday, season
+
+-Impact of promotions on sales
+
+-Correlation heatmaps
+
+Step 3: Feature Engineering
+-Lag variables (previous day/week/month sales)
+
+-Rolling averages
+
+-Promo interaction terms
+
+-Categorical encoding for store type, assortment
+
+Step 4: Modeling
+-Time Series Approach:
+
+ --ARIMA, Prophet for individual stores
+
+-Machine Learning Approach:
+
+ --XGBoost/LightGBM for global forecasting
+
+-Evaluate:
+
+ --RMSLE, MAE, SMAPE
